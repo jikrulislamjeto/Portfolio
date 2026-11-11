@@ -1,0 +1,41 @@
+{
+  "education": [
+    {
+      "id": "bsc-cse",
+      "degree": "Bachelor of Science (B.Sc.)",
+      "field": "Computer Science and Engineering (CSE)",
+      "university": "Green University of Bangladesh",
+      "period": "2025 – Present",
+      "status": "Ongoing",
+      "description": "Currently pursuing an undergraduate degree in Computer Science and Engineering, focusing on programming, software development, problem-solving, and core computer science concepts."
+    },
+    {
+      "id": "hsc",
+      "degree": "Higher Secondary Certificate (HSC)",
+      "field": "Science",
+      "institution": "Amirjan College",
+      "university": "",
+      "period": "2023 – 2024",
+      "status": "Completed",
+      "description": "Completed higher secondary education in the Science group."
+    }
+  ],
+  "technicalLearning": [
+    {
+      "id": "programming-hero",
+      "name": "Complete Web Development",
+      "provider": "Programming Hero",
+      "batch": "Batch 14",
+      "status": "In Progress",
+      "focus": "Frontend development, HTML, CSS, JavaScript, React, Next.js, TypeScript, and full-stack application development through practical projects."
+    },
+    {
+      "id": "university-cse",
+      "name": "Computer Science Fundamentals",
+      "provider": "Green University of Bangladesh",
+      "batch": "CSE Undergraduate Program",
+      "status": "In Progress",
+      "focus": "C, C++, Java, Object-Oriented Programming, Data Structures, Algorithms, Database Management, and problem solving."
+    }
+  ]
+}
