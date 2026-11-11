@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import { ThemeProvider } from "@/components/providers/theme-provider";
 import "./globals.css";
+import { Toaster } from "sonner";
+import Footer from "@/components/layout/footer";
+import BackToTop from "@/components/ui/back-to-top";
 
 import Navbar from "@/components/layout/Navbar";
 
@@ -54,7 +57,10 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Navbar />
-          {children}
+          <main id="main-content">{children}</main>
+          <Footer />
+          <BackToTop />
+          <Toaster position="bottom-right" richColors closeButton />
         </ThemeProvider>
       </body>
     </html>

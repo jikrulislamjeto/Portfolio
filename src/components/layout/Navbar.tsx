@@ -1,12 +1,14 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useSyncExternalStore } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useTheme } from "next-themes";
 import { ArrowUpRight, Menu, X } from "lucide-react";
 
 import ThemeToggle from "@/components/ui/theme-toggle";
+import ScrollProgress from "@/components/ui/scroll-progress";
 
 // NAVIGATION LINKS
 const navLinks = [
@@ -14,7 +16,7 @@ const navLinks = [
   { label: "About", href: "/about" },
   { label: "Projects", href: "/projects" },
   { label: "Problem Solving", href: "/problem-solving" },
-  { label: "Credentials", href: "/credentials" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 // ACTIVE LINK CHECK
@@ -23,11 +25,33 @@ function isActiveLink(pathname: string, href: string) {
     return pathname === "/";
   }
 
+  if (href.startsWith("/#")) {
+    return pathname === "/";
+  }
+
   return pathname === href || pathname.startsWith(`${href}/`);
+}
+
+// HYDRATION-SAFE MOUNT CHECK
+const subscribe = () => () => {};
+
+function getClientSnapshot() {
+  return true;
+}
+
+function getServerSnapshot() {
+  return false;
 }
 
 export default function Navbar() {
   const pathname = usePathname();
+const { resolvedTheme } = useTheme();
+
+  const mounted = useSyncExternalStore(
+    subscribe,
+    getClientSnapshot,
+    getServerSnapshot,
+  );
 
   // MOBILE MENU STATE
   const [menuState, setMenuState] = useState({
@@ -37,6 +61,10 @@ export default function Navbar() {
 
   const isMenuOpen = menuState.isOpen && menuState.pathname === pathname;
 
+  const logoSrc =
+    mounted && resolvedTheme === "dark"
+      ? "/logo/logo-dark.png"
+      : "/logo/logo-dark.png";
   // EVENT HANDLERS
   const toggleMenu = () => {
     setMenuState({
@@ -103,21 +131,12 @@ export default function Navbar() {
         >
           <span className="relative block h-10 w-10">
             <Image
-              src="/logo/logo.png"
+              src={logoSrc}
               alt=""
               fill
               sizes="200px"
               priority
-              className="object-contain dark:hidden"
-            />
-
-            <Image
-              src="/logo/logo-light.png"
-              alt=""
-              fill
-              sizes="200px"
-              priority
-              className="hidden object-contain dark:block"
+              className="object-contain"
             />
           </span>
 
@@ -183,11 +202,14 @@ export default function Navbar() {
       </nav>
 
       {/* MOBILE NAVIGATION */}
-      {isMenuOpen && (
-        <div
-          id="mobile-navigation"
-          className="absolute inset-x-0 top-full border-b border-border bg-background shadow-lg lg:hidden"
-        >
+       <div
+        id="mobile-navigation"
+        data-open={isMenuOpen}
+        aria-hidden={!isMenuOpen}
+        inert={!isMenuOpen}
+        className="mobile-nav-panel absolute inset-x-0 top-full border-b border-border bg-background shadow-lg"
+      >
+        <div className="mobile-nav-panel-inner">
           <div className="container-custom flex flex-col gap-2 py-5">
             {navLinks.map((link) => {
               const active = isActiveLink(pathname, link.href);
@@ -220,7 +242,10 @@ export default function Navbar() {
             </Link>
           </div>
         </div>
-      )}
+      </div>
+
+      {/* SCROLL PROGRESS */}
+      <ScrollProgress />
     </header>
   );
 }
