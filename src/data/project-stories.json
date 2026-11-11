@@ -1,0 +1,149 @@
+{
+  "bazar-dor": {
+    "title": "Building BazarDor: Making Market Prices Easier to Follow",
+    "subtitle": "A practical idea for bringing everyday market price information into one place.",
+    "readingTime": "5 min read",
+    "sections": [
+      {
+        "heading": "The Problem Behind the Idea",
+        "paragraphs": [
+          "BazarDor started with a familiar everyday problem: keeping track of the prices of essential products in local markets. Prices of rice, lentils, vegetables, fish, meat, and other necessities can vary, making it difficult for people to compare costs and plan their purchases.",
+          "I wanted to explore how a web application could make market price information easier to access and understand. That idea became the foundation of BazarDor, a project focused on presenting essential commodity prices through a simple, user-friendly interface."
+        ]
+      },
+      {
+        "heading": "Turning the Idea into a Web Application",
+        "paragraphs": [
+          "I built BazarDor with Next.js and TypeScript, using a component-based approach to organize the interface and application logic. The goal was to create a structured experience where users could explore commodity information without dealing with unnecessary complexity.",
+          "As the project developed, I also worked on organizing the data and designing the interface around the needs of everyday users. This helped me think beyond individual components and consider how information should flow throughout an application."
+        ]
+      },
+      {
+        "heading": "Authentication and Database Integration",
+        "paragraphs": [
+          "One of the more challenging parts of the development process was integrating authentication with Better Auth and connecting the application to MongoDB. Working with these technologies required me to understand how environment variables, database connections, authentication requests, and user sessions interact.",
+          "Debugging connection issues and preparing the application for deployment taught me that a feature working on localhost does not automatically guarantee that it will work in production. Configuration, provider settings, and the production environment all need careful attention."
+        ]
+      },
+      {
+        "heading": "Designing for Everyday Use",
+        "paragraphs": [
+          "BazarDor is intended to make information about essential commodities easier to browse. This made clarity an important part of the design process, from presenting product information to organizing the overall page structure.",
+          "I learned to consider how responsive layouts, readable content, and consistent components can make an application more approachable. A useful interface should help users find information quickly rather than make them work to understand it."
+        ]
+      },
+      {
+        "heading": "What I Learned",
+        "paragraphs": [
+          "BazarDor strengthened my practical understanding of full-stack development with Next.js, TypeScript, Better Auth, and MongoDB. It also gave me experience troubleshooting issues that cross the boundaries between the frontend, backend, database, and deployment environment.",
+          "Most importantly, the project reminded me that software development involves more than writing code. It requires testing assumptions, investigating unexpected behavior, and making sure the different parts of an application work together."
+        ]
+      },
+      {
+        "heading": "Where BazarDor Can Go Next",
+        "paragraphs": [
+          "I would like to expand BazarDor with reliable, regularly updated market price data, comparisons across markets, and historical price trends. These features could help users understand how prices change over time and make more informed decisions.",
+          "For me, BazarDor represents an effort to connect web development with a practical, everyday need. It is an opportunity to keep improving my technical skills while exploring how digital tools can make useful information more accessible."
+        ]
+      }
+    ]
+  },
+  "fitlog": {
+    "title": "FitLog: Turning Workout Data into a Personal Fitness Plan",
+    "subtitle": "Building a workout library that helps users explore exercises and organize their routines.",
+    "readingTime": "4 min read",
+    "sections": [
+      {
+        "heading": "Starting with a Fitness-Focused Idea",
+        "paragraphs": [
+          "FitLog began as a project to make workout information easier to explore and organize. Exercise options can feel overwhelming when users have to search through scattered information to understand which workouts are available and what each one involves.",
+          "I wanted to create a centralized workout library where users could browse exercises, learn about their characteristics, and select workouts for a personal plan. This gave the project a clear focus: presenting useful information through an organized and accessible interface."
+        ]
+      },
+      {
+        "heading": "Building the Workout Library",
+        "paragraphs": [
+          "I developed FitLog with Next.js, TypeScript, and Tailwind CSS, using DaisyUI to support the interface design. The application retrieves workout information from an API, including exercise names, images, muscle groups, equipment, difficulty levels, duration, and instructions.",
+          "Working with API data helped me practice transforming structured responses into reusable UI components. I also focused on keeping workout cards informative while maintaining a consistent layout across different screen sizes."
+        ]
+      },
+      {
+        "heading": "From Browsing to Planning",
+        "paragraphs": [
+          "A workout library becomes more useful when users can do something with the information they discover. I extended the concept to include a personal plan, allowing selected exercises to be organized for a workout session.",
+          "The planning functionality introduced additional logic, including preventing duplicate selections and limiting the daily plan to five exercises. I also explored how saved workouts and plan items could be represented separately so users could organize their choices more clearly."
+        ]
+      },
+      {
+        "heading": "Making the Interface Feel Consistent",
+        "paragraphs": [
+          "One of the important design challenges was creating a consistent experience across the library, workout details, and personal plan pages. I used a dark visual direction, clear typography, exercise imagery, and reusable components to give the application a unified identity.",
+          "I also worked on responsive layouts so the content could adapt to mobile, tablet, and desktop screens. Comparing the implementation with the design reference helped me understand the importance of spacing, alignment, and small visual details."
+        ]
+      },
+      {
+        "heading": "Challenges and Lessons",
+        "paragraphs": [
+          "FitLog helped me understand how API integration, application state, navigation, and reusable components work together in a Next.js application. I also learned to pay attention to the distinction between server-rendered pages and client-side interactions when managing dynamic data.",
+          "The project reinforced the value of building features in manageable steps and testing them together. A polished interface is only one part of a successful application; its interactions and underlying logic must also behave consistently."
+        ]
+      },
+      {
+        "heading": "Future Improvements",
+        "paragraphs": [
+          "I would like to expand FitLog with more flexible workout scheduling, progress tracking, and improved ways to organize exercises. Persistent personal plans and workout history could also make the experience more useful over time.",
+          "FitLog represents an important step in my frontend development journey, combining API-driven content, interactive state management, responsive design, and a practical user-focused concept."
+        ]
+      }
+    ]
+  },
+  "devstack": {
+    "title": "DevStack: Exploring the Tools Behind Modern Web Development",
+    "subtitle": "A developer-focused project built around discovering and organizing web technologies.",
+    "readingTime": "4 min read",
+    "sections": [
+      {
+        "heading": "The Idea Behind DevStack",
+        "paragraphs": [
+          "DevStack grew out of my interest in the technologies and tools used to build modern web applications. Developers often work with a combination of languages, frameworks, libraries, and development tools, and understanding how these technologies fit together is an important part of learning.",
+          "I wanted to explore a project that presented technology-related information in a structured way while giving me an opportunity to practice building a clean, responsive web interface."
+        ]
+      },
+      {
+        "heading": "Building with React and TypeScript",
+        "paragraphs": [
+          "I used React to build the interface and TypeScript to make the code more predictable and easier to maintain. Organizing technology information into reusable components helped me understand how a consistent data structure can simplify rendering and reduce unnecessary duplication.",
+          "I also worked with Tailwind CSS to control spacing, typography, colors, and responsive layouts. This combination allowed me to focus on component structure while refining the visual presentation of the application."
+        ]
+      },
+      {
+        "heading": "Turning Data into a Clear Interface",
+        "paragraphs": [
+          "A key part of the project was presenting information in a way that felt organized rather than crowded. I explored how reusable cards, consistent content structures, and clear visual hierarchy could make technology-related information easier to scan.",
+          "I also paid attention to the relationship between the design and the underlying data. Keeping information organized separately from presentation logic made the project easier to extend and helped reinforce good component-design practices."
+        ]
+      },
+      {
+        "heading": "The Challenge of Matching a Design",
+        "paragraphs": [
+          "Translating a design reference into a working interface required more than choosing the right colors. Small differences in spacing, alignment, typography, and component sizing could affect the overall result.",
+          "I learned to compare the implementation with the intended design, identify the most noticeable differences, and refine individual sections without disrupting the rest of the application. This process improved my attention to detail and my approach to responsive UI development."
+        ]
+      },
+      {
+        "heading": "What the Project Taught Me",
+        "paragraphs": [
+          "DevStack gave me more practice with React components, TypeScript data structures, Tailwind CSS, and responsive web design. It also helped me appreciate how naming conventions, reusable patterns, and separation of concerns make a codebase easier to understand.",
+          "The experience showed me that a relatively focused project can still teach valuable lessons about maintainability, design consistency, and the process of turning an idea into a polished interface."
+        ]
+      },
+      {
+        "heading": "Ideas for Further Development",
+        "paragraphs": [
+          "I would like to explore additional ways to organize and discover technologies, such as category-based browsing, richer technology details, and more interactive learning resources.",
+          "DevStack reflects my continued interest in building practical web projects while improving both the technical structure and the visual quality of my work."
+        ]
+      }
+    ]
+  }
+}

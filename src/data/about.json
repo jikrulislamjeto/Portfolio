@@ -1,0 +1,53 @@
+{
+  "intro": "I'm Jikrul Islam Jeto, a web developer and competitive programming enthusiast from Bangladesh. I enjoy turning ideas into practical web applications, solving problems through code, and exploring the technologies behind modern software.",
+  "summary": "My programming journey began in 2025, when I started learning Python on a mobile phone. What began as curiosity about software, games, and cybersecurity gradually grew into an interest in web development, C++, data structures, algorithms, and competitive programming.",
+  "focus": "I'm currently most interested in frontend development, especially building responsive interfaces that feel intuitive, clean, and useful. I'm also exploring full-stack development, authentication systems, database integration, and how frontend and backend technologies work together.",
+  "approach": "I learn through documentation, courses, experimentation, and AI-assisted development. I believe understanding the reasoning behind an implementation matters just as much as getting it to work, so I try to review, test, and improve the solutions I build.",
+  "journey": [
+    {
+      "period": "2025",
+      "title": "Curiosity Turned Into Code",
+      "description": "Started learning Python on a mobile phone and explored how software, games, and security-related systems work."
+    },
+    {
+      "period": "2026",
+      "title": "Discovering Web Development",
+      "description": "Started exploring HTML, CSS, JavaScript, and React to learn how interactive websites and web applications are built."
+    },
+    {
+      "period": "2025",
+      "title": "Exploring Computer Science",
+      "description": "Focused more on C++, data structures, algorithms, and competitive programming while strengthening problem-solving skills."
+    },
+    {
+      "period": "Now",
+      "title": "Building Real Projects",
+      "description": "Developing practical web applications, exploring full-stack technologies, refining frontend skills, and continuing to solve algorithmic problems."
+    }
+  ],
+  "interests": [
+    {
+      "title": "Frontend Development",
+      "description": "Creating responsive, accessible, and visually consistent interfaces that turn ideas into useful experiences."
+    },
+    {
+      "title": "Full-Stack Development",
+      "description": "Exploring authentication, databases, APIs, and the systems that make web applications work end to end."
+    },
+    {
+      "title": "Competitive Programming",
+      "description": "Practicing algorithms, analyzing problems, and developing a more structured approach to problem-solving."
+    },
+    {
+      "title": "Cybersecurity",
+      "description": "Exploring security concepts and learning how software systems can be designed and understood more carefully."
+    },
+    {
+      "title": "Continuous Learning",
+      "description": "Expanding my knowledge across software engineering, data engineering, computer science, and emerging technologies."
+    }
+  ],
+  "beyondCode": "Beyond programming, I'm interested in psychology, history, law, and understanding how people think. I enjoy gaming, observing nature, and photographing the sky and moon. These interests keep me curious and encourage me to look at problems from different perspectives.",
+  "career": "I'm looking for opportunities to learn, collaborate, and grow through internships, junior developer roles, and meaningful projects. My long-term goal is to become a well-rounded software engineer with strong foundations in development, computer science, and problem-solving.",
+  "location": "Kanchan, Rupganj, Narayanganj, Bangladesh"
+}
