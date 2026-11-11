@@ -1,7 +1,9 @@
+
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { Suspense } from "react";
 
 import {
   ArrowLeft,
@@ -57,12 +59,30 @@ export async function generateMetadata({
   }
 
   return {
-    title: `${project.name} | Md Jonaed Joshim`,
+    title: `${project.name} | Md. Jikrul Islam Jeto`,
     description: detail.overview,
   };
 }
 
-export default async function ProjectDetailsPage({ params }: PageProps) {
+// PAGE WRAPPER
+export default function ProjectDetailsPage({ params }: PageProps) {
+  return (
+    <Suspense
+      fallback={
+        <main className="min-h-screen">
+          <div className="container-custom py-16">
+            <p className="text-muted">Loading project...</p>
+          </div>
+        </main>
+      }
+    >
+      <ProjectDetailsContent params={params} />
+    </Suspense>
+  );
+}
+
+// PROJECT DETAILS CONTENT
+async function ProjectDetailsContent({ params }: PageProps) {
   const { slug } = await params;
 
   const project = projects.find((item) => item.slug === slug);
@@ -196,7 +216,11 @@ export default async function ProjectDetailsPage({ params }: PageProps) {
             {/* CHALLENGES */}
             <section aria-labelledby="challenges-heading">
               <div className="flex items-center gap-3">
-                <Wrench size={21} aria-hidden="true" className="text-accent" />
+                <Wrench
+                  size={21}
+                  aria-hidden="true"
+                  className="text-accent"
+                />
 
                 <h2
                   id="challenges-heading"
@@ -306,6 +330,7 @@ export default async function ProjectDetailsPage({ params }: PageProps) {
                 </div>
               </div>
 
+              {/* LIVE PROJECT LINK */}
               <div className="mt-7 border-t border-border pt-6">
                 <a
                   href={project.liveUrl}

@@ -26,7 +26,7 @@
     "role": "Full-stack developer",
     "status": "Portfolio project"
   },
-  "fit-log": {
+  "fitlog": {
     "tagline": "A smarter way to explore and organize workouts.",
     "overview": "FitLog is a responsive workout discovery and planning application built with Next.js and TypeScript. The project focuses on presenting exercise information in a clean, organized interface while allowing users to build a personal workout plan. It combines reusable UI components, dynamic workout details, and plan management to create a more structured workout-planning experience.",
     "features": [
@@ -53,7 +53,7 @@
     "role": "Frontend developer",
     "status": "Learning and portfolio project"
   },
-  "dev-stack": {
+  "devstack": {
     "tagline": "Discover the right tools for your next development project.",
     "overview": "DevStack is a web development project focused on presenting development technologies and tools through an organized, user-friendly interface. Built with React and modern styling tools, the project explores reusable components, structured technology data, and responsive layouts to make browsing development resources more intuitive.",
     "features": [
