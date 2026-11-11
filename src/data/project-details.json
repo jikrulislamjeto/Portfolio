@@ -1,0 +1,81 @@
+
+{
+  "bazar-dor": {
+    "tagline": "Everyday market prices, all in one place.",
+    "overview": "BazarDor is a full-stack web application designed to make everyday market prices in Bangladesh easier to explore and compare. Built with Next.js, it brings essential commodity information into a single interface and explores how authentication, database integration, and market-price data can work together to create a useful everyday tool.",
+    "features": [
+      "Browse essential commodity prices",
+      "Explore products by category",
+      "Compare prices across different markets",
+      "View price changes and market trends",
+      "Email and password authentication",
+      "Google and GitHub social authentication",
+      "Responsive interface for different screen sizes"
+    ],
+    "challenges": [
+      "Integrating Better Auth with Next.js and MongoDB required understanding authentication flows and database configuration.",
+      "Configuring Google and GitHub OAuth across local development and production environments required careful debugging.",
+      "Organizing market-price information into clear, reusable, and responsive interfaces required attention to data presentation and usability."
+    ],
+    "improvements": [
+      "Expand historical price tracking and trend visualization.",
+      "Improve data validation and API error handling.",
+      "Refine accessibility and mobile usability.",
+      "Enhance market comparison with more detailed insights."
+    ],
+    "role": "Full-stack developer",
+    "status": "Portfolio project"
+  },
+  "fit-log": {
+    "tagline": "A smarter way to explore and organize workouts.",
+    "overview": "FitLog is a responsive workout discovery and planning application built with Next.js and TypeScript. The project focuses on presenting exercise information in a clean, organized interface while allowing users to build a personal workout plan. It combines reusable UI components, dynamic workout details, and plan management to create a more structured workout-planning experience.",
+    "features": [
+      "Browse a library of workout exercises",
+      "View detailed workout information",
+      "Explore exercises by muscle group and equipment",
+      "Check workout difficulty and duration",
+      "Create a personal workout plan",
+      "Save exercises for later",
+      "Track planned workout duration and estimated calories",
+      "Responsive workout cards and navigation"
+    ],
+    "challenges": [
+      "Integrating external workout API data into reusable components required careful data handling.",
+      "Managing saved exercises and planned workouts required consistent state management and duplicate prevention.",
+      "Building a responsive interface that closely follows the intended design required attention to spacing, typography, and layout."
+    ],
+    "improvements": [
+      "Add persistent workout plans across sessions.",
+      "Introduce workout history and progress tracking.",
+      "Improve filtering and search functionality.",
+      "Enhance accessibility and mobile interactions."
+    ],
+    "role": "Frontend developer",
+    "status": "Learning and portfolio project"
+  },
+  "dev-stack": {
+    "tagline": "Discover the right tools for your next development project.",
+    "overview": "DevStack is a web development project focused on presenting development technologies and tools through an organized, user-friendly interface. Built with React and modern styling tools, the project explores reusable components, structured technology data, and responsive layouts to make browsing development resources more intuitive.",
+    "features": [
+      "Browse development technologies and tools",
+      "Organize technology information into reusable data structures",
+      "Explore a component-based interface",
+      "Responsive layouts for desktop and mobile",
+      "Consistent styling with Tailwind CSS",
+      "Reusable UI sections and navigation"
+    ],
+    "challenges": [
+      "Structuring technology information in a maintainable format required careful component and data organization.",
+      "Creating reusable sections helped reduce duplication while keeping the interface consistent.",
+      "Matching the intended design across different screen sizes required iterative layout and styling adjustments."
+    ],
+    "improvements": [
+      "Add technology search and category filtering.",
+      "Provide more detailed information for individual technologies.",
+      "Improve keyboard navigation and accessibility.",
+      "Expand the collection of development tools and resources."
+    ],
+    "role": "Frontend developer",
+    "status": "Portfolio project"
+  }
+}

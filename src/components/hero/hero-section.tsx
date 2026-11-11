@@ -167,7 +167,7 @@ export default function HeroSection() {
       {/* SCROLL INDICATOR */}
       <div className="container-custom relative z-10 flex justify-center pb-7 sm:pb-9">
         <a
-          href="#hero-next"
+          href="#featured-projects"
           aria-label="Scroll to the next section"
           className="group inline-flex flex-col items-center gap-2 text-muted transition-colors hover:text-accent"
         >

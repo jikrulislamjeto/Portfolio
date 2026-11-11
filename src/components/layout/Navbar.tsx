@@ -103,7 +103,7 @@ export default function Navbar() {
         >
           <span className="relative block h-10 w-10">
             <Image
-              src="/logo/JIJ Logo.png"
+              src="/logo/logo.png"
               alt=""
               fill
               sizes="200px"
@@ -112,7 +112,7 @@ export default function Navbar() {
             />
 
             <Image
-              src="/logo/JIJ Logo.png"
+              src="/logo/logo-light.png"
               alt=""
               fill
               sizes="200px"
