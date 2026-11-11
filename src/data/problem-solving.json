@@ -1,0 +1,23 @@
+{
+  "intro": "Competitive programming helps me become a more thoughtful problem solver. I enjoy exploring algorithms, working through challenging problems, and improving the way I reason about solutions.",
+  "journey": "My interest in problem solving grew as I moved from web development into C++, data structures, and algorithms. Competitive programming gave me a structured way to practice logical thinking, understand constraints, and learn from mistakes.",
+  "approach": "I try to understand why a solution works, not just whether it passes. When I struggle with a problem, I revisit the underlying concepts, study alternative approaches, and look for ways to improve my reasoning.",
+  "focusAreas": [
+    {
+      "title": "Data Structures",
+      "description": "Understanding how data can be organized and accessed efficiently."
+    },
+    {
+      "title": "Algorithms",
+      "description": "Studying different approaches to solving computational problems."
+    },
+    {
+      "title": "Complexity Analysis",
+      "description": "Learning to evaluate time and memory requirements."
+    },
+    {
+      "title": "Logical Reasoning",
+      "description": "Breaking difficult problems into smaller, manageable steps."
+    }
+  ]
+}
