@@ -12,7 +12,7 @@ const quickLinks = [
   { label: "About", href: "/about" },
   { label: "Projects", href: "/projects" },
   { label: "Problem Solving", href: "/problem-solving" },
-  { label: "Credentials", href: "/credentials" },
+  // { label: "Credentials", href: "/credentials" },
   { label: "Contact", href: "/#contact" },
 ];
 
@@ -43,10 +43,10 @@ export default function Footer() {
               aria-label="Md. Jikrul Islam Jeto — Home"
             >
               <span className="flex h-10 w-10 items-center justify-center rounded-xl border border-accent/25 bg-accent/10 font-mono text-sm font-bold text-accent">
-                MJ
+                JIJ
               </span>
 
-              <span>Jikrul Islam</span>
+              <span>Md. Jikrul Islam Jeto</span>
             </Link>
 
             <p className="mt-4 text-sm font-medium text-accent">
@@ -62,7 +62,7 @@ export default function Footer() {
             <div className="mt-5 flex items-center gap-2 text-sm text-muted">
               <MapPin size={16} aria-hidden="true" />
 
-              <span>Sirajganj, Bangladesh</span>
+              <span>Narayanganj, Bangladesh</span>
             </div>
           </div>
 

@@ -131,13 +131,13 @@ export default function EducationSection() {
 
         {/* CREDENTIALS LINK */}
         <div className="mt-10 border-t border-border pt-7">
-          <Link
+          {/* <Link
             href="/credentials"
             className="inline-flex items-center gap-2 text-sm font-semibold text-accent transition-colors hover:text-accent-hover"
           >
             Explore Certificates &amp; Credentials
             <ArrowUpRight size={17} aria-hidden="true" />
-          </Link>
+          </Link> */}
         </div>
       </div>
     </section>

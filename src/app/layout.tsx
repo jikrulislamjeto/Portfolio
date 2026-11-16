@@ -1,12 +1,16 @@
 import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import { ThemeProvider } from "@/components/providers/theme-provider";
-import "./globals.css";
-import { Toaster } from "sonner";
+import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/footer";
 import BackToTop from "@/components/ui/back-to-top";
+import ScrollReveal from "@/components/ui/scroll-reveal";
+import { Toaster } from "sonner";
+import { siteConfig } from "@/lib/seo";
 
-import Navbar from "@/components/layout/Navbar";
+import "./globals.css";
+
+// FONTS
 
 const inter = Inter({
   variable: "--font-inter",
@@ -20,25 +24,65 @@ const jetbrainsMono = JetBrains_Mono({
   display: "swap",
 });
 
+// SEO METADATA
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteConfig.url),
+
   title: {
-    default: "Md. Jikrul Islam Jeto | Web Developer & Competitive Programmer",
-    template: "%s | Md. Jikrul Islam Jeto",
+    default: siteConfig.title,
+    template: `%s | ${siteConfig.name}`,
   },
-  description:
-    "Portfolio of Md. Jikrul Islam Jeto, a web developer and competitive programmer focused on building practical applications and solving problems.",
+
+  description: siteConfig.description,
+
+  applicationName: siteConfig.name,
+
   keywords: [
     "Md. Jikrul Islam Jeto",
     "Jikrul Islam Jeto",
     "Web Developer",
     "Competitive Programmer",
     "React Developer",
-    "MERN Stack Developer",
+    "Full Stack Developer",
     "Bangladesh",
   ],
-  authors: [{ name: "Md. Jikrul Islam Jeto" }],
-  creator: "Md. Jikrul Islam Jeto",
+
+  authors: [{ name: siteConfig.name, url: siteConfig.url }],
+  creator: siteConfig.name,
+
+  alternates: {
+    canonical: "/",
+  },
+
+  openGraph: {
+    type: "website",
+    locale: siteConfig.locale,
+    url: siteConfig.url,
+    siteName: siteConfig.name,
+    title: siteConfig.title,
+    description: siteConfig.description,
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: siteConfig.title,
+    description: siteConfig.description,
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
+
+// ROOT LAYOUT
 
 export default function RootLayout({
   children,
@@ -50,16 +94,24 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${jetbrainsMono.variable} antialiased`}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          {/* SKIP NAVIGATION */}
+          <a href="#main-content" className="skip-to-content">
+            Skip to main content
+          </a>
+
           <Navbar />
-          <main id="main-content">{children}</main>
+
+          <main id="main-content" tabIndex={-1}>
+            {children}
+          </main>
+
           <Footer />
+
           <BackToTop />
+
+          <ScrollReveal />
+
           <Toaster position="bottom-right" richColors closeButton />
         </ThemeProvider>
       </body>
